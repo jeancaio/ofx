@@ -163,6 +163,8 @@ module OFX
         date << " #{offset}"
 
         Time.parse(date)
+      rescue 
+        nil
       end
 
       def build_balance(node)
